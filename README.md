@@ -78,7 +78,7 @@ As I was saying, ViewHolder pattern is nothing new, Google actually recommend us
 ```
 
 
-##RecyclerView.LayoutManager 
+## RecyclerView.LayoutManager 
 
 The _LayoutManager_ is responsible to layout all views in the _RecyclerView_, specifying the _LinearLayoutManager_ allows access among other items displayed on the screen as the first element, last, or, for example, the last fully visible, this horizontally or vertical, in the example used in a vertical arrangement. 
     
@@ -87,7 +87,7 @@ The _LayoutManager_ is responsible to layout all views in the _RecyclerView_, sp
          recyclerView.setLayoutManager (mLayoutManager); 
 ```
 
-##RecyclerView.ItemDecorator 
+## RecyclerView.ItemDecorator 
 
 Another important class is the _ItemDecorator_, this class can alter the views of the RecycleView, this also provides also provides an element called insets (margins) that can be applied to views without modifying the layout parameters. 
 
@@ -147,7 +147,7 @@ The _ItemAnimator_ class as the name suggests, animates the _RecyclerView_ when 
 
 The _RecyclerView_ must know when an item is inserted or deleted, with elements like ListViews, GridViews this was accomplished by calling ```notifyDataSetChanged ()``` method, in terms of performance, it is quite costly as it redraws all items in the layout, the same with the RecyclerView is using ```notifyItemInserted()``` method to add and ```notifyItemRemoved ()``` to remove, updating only the appropriate part. 
 
-##References: 
+## References: 
 [Wolfram RITTMEYER - A Glance at Android's first RecyclerView](http://www.grokkingandroid.com/first-glance-androids-recyclerview/)
 [Wires are obsolete - Building a RecyclerView](http://wiresareobsolete.com/2014/09/recyclerview-layoutmanager-2/)
 [Android L preview Reference](http://developer.android.com/preview/reference.html)
